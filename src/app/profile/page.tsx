@@ -43,7 +43,7 @@ function Page(props: Props) {
               <Image
                 width="242"
                 height="363"
-                src={session ? session?.user?.image : "/avatar.png"}
+                src={session?.user?.image ? session?.user?.image : "/avatar.png"}
                 alt="profile picture"
               />
             </picture>

@@ -75,7 +75,7 @@ function DataChart() {
   return (
     <Box marginTop={"20px"}>
       <Paper>
-        <Line    data={data} options={options} />
+        <Line    data={data}  />
       </Paper>
     </Box>
   );

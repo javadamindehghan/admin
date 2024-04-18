@@ -11,6 +11,11 @@ import {
  
 } from "chart.js";
 import { Line  ,Doughnut   } from "react-chartjs-2";
+import type { ChartData, ChartOptions } from 'chart.js';
+interface LineProps {
+  options: ChartOptions<'doughnut'>;
+  data: ChartData<'doughnut'>;
+}
 import Paper from "@mui/material/Paper";
 
 function DoughnutChart() {
@@ -75,7 +80,7 @@ function DoughnutChart() {
   return (
     <Box marginTop={"20px"}>
       <Paper>
-        <Doughnut    data={data} options={options} />
+        <Doughnut    data={data} />
       </Paper>
     </Box>
   );

@@ -35,7 +35,7 @@ export default function ToggleColorMode({
   children: React.ReactNode;
 }) {
 
-  const [mode, setMode] = React.useState( 'dark');
+  const [mode, setMode] = React.useState<'dark'|'light'>( 'dark');
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {

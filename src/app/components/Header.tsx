@@ -105,7 +105,7 @@ function Header({ handleDrawerToggle }: { handleDrawerToggle: () => void }) {
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt="Remy Sharp"
-                  src={session ? session?.user?.image : ""}
+                  src={session?.user?.image ? session?.user?.image : "./avatar.png"}
                 />
               </IconButton>
             </Tooltip>
